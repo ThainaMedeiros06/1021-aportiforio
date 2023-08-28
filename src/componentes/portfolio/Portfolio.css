@@ -1,0 +1,56 @@
+main{
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+main ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.div-saibamais{
+    display: flex;
+    flex-direction: column;
+    height:350px;
+    width: 500px;
+    justify-content: space-between;
+}
+.div-saibamais p{
+    font-size: 20px;
+    cursor: default;
+    color: rgb(24, 65, 104);
+    line-height: 30px;
+}
+.button-saibamais{
+    width: 50%;
+    padding: 12px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    background-color: rgb(24, 65, 104);
+    border: 0;
+}
+.button-saibamais:hover{
+    background-color: rgb(39, 86, 129);
+}
+.Titulo1{
+    font-size: 60px;
+    cursor: default;
+    color: rgb(24, 65, 104);
+}
+.img-div-pessoa{
+    margin-left: 10vw;
+}
+.img-div-pessoa img{
+    width: 250px;
+}
