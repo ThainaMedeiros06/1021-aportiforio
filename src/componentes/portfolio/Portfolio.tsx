@@ -18,20 +18,26 @@ function Portfolio(){
             id:1,
             titulo:'Voleibol NVC',
             descricao:'Este é um projeto de voleibol de Naviraí onde o time participa de vários jogos dentro e fora da cidade. Todo ano o time participa dos jogos da Conesul. ',
-            imagem:'/volei.jpg'
+            imagem:'volei.jpg'
         },
         {
             id:2,
-            titulo:'Estágio Na Regrigeração do Gilmar',
-            descricao:'Esse estágio foi feito na regrigeração do Gilmar, onde ',
+            titulo:'Estágio',
+            descricao:'Esse estágio foi feito na Regrigeração do Gilmar, atuei na área administrativa.',
             imagem:'estagio.jpg'
         },
         {
             id:3,
             titulo:'Site da Barbie',
-            descricao:'O site da Barbie foi criado para ser usado como base na criação do nossos Portifolios.',
+            descricao:'Site da barbie criado na matéria de Frameworks.',
             imagem:'barbie.png'
         },
+        {
+            id:4,
+            titulo:'Aplicativo Gerel',
+            descricao:'Criando um aplicativo para ajudar a melhorar o gerenciamento da Gerel sobre os eventos esportivos, incrições e campeonatos.',
+            imagem:'gerel.png'
+        }
     ]
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
         setTexto(e.target.value)
@@ -65,12 +71,12 @@ function Portfolio(){
             {
                 (texto)?<p>Resultados Para:{texto}</p>:""
             } 
-            </div>
+        </div>
             <div className='content'>
             {
                 projetos.filter((projeto)=>projeto.titulo.toLocaleLowerCase().includes(texto)).map((projeto)=><Projeto key={projeto.id} titulo={projeto.titulo} descricao={projeto.descricao} imagem={projeto.imagem}/>)
             }
-        </div>
+            </div>
         </div>  
         </>
     )
