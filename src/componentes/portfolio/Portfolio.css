@@ -1,12 +1,13 @@
 main{
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 200, 200);
     height: 60vh;
     width: 100%;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
     align-items: center;
+
 }
 main ul{
     list-style-type: none;
@@ -66,6 +67,7 @@ input{
 p{
     margin: 20px;
     font-size: 22px;
+    font-size: 25px;
 }
 .img-lupa{
     height: 16px;

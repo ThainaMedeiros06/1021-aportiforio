@@ -37,6 +37,12 @@ function Portfolio(){
             titulo:'Aplicativo Gerel',
             descricao:'Criando um aplicativo para ajudar a melhorar o gerenciamento da Gerel sobre os eventos esportivos, incrições e campeonatos.',
             imagem:'gerel.png'
+        },
+        {
+            id:5,
+            titulo:'Site de Sapatos',
+            descricao:'Nesse projeto foi criado um site onde vende varios modelos de sapatos.',
+            imagem:'sapato.jpg'
         }
     ]
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
