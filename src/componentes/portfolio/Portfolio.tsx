@@ -17,20 +17,20 @@ function Portfolio(){
         {
             id:1,
             titulo:'Voleibol NVC',
-            descricao:'knforehfpqhpi4rfhrphf',
-            imagem:''
+            descricao:'Este é um projeto de voleibol de Naviraí onde o time participa de vários jogos dentro e fora da cidade. Todo ano o time participa dos jogos da Conesul. ',
+            imagem:'/volei.jpg'
         },
         {
             id:2,
-            titulo:'Estágio',
-            descricao:'knforehfpqhpi4rfhrphf',
-            imagem:''
+            titulo:'Estágio Na Regrigeração do Gilmar',
+            descricao:'Esse estágio foi feito na regrigeração do Gilmar, onde ',
+            imagem:'estagio.jpg'
         },
         {
             id:3,
             titulo:'Site da Barbie',
-            descricao:'knforehfpqhpi4rfhrphf',
-            imagem:''
+            descricao:'O site da Barbie foi criado para ser usado como base na criação do nossos Portifolios.',
+            imagem:'barbie.png'
         },
     ]
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
@@ -57,17 +57,21 @@ function Portfolio(){
                 <img src={Pessoa}/>   
              </div>
         </main>
+        <div className='div-content'>
         <div className='campo-pesquisa'>
             <p>Pesquise um projeto</p>
             <input type="text" className='input' placeholder='Pesquise um Projeto' onChange={TrataTexto} />
             <img className='img-lupa' src="lupa.png" alt="" />
             {
                 (texto)?<p>Resultados Para:{texto}</p>:""
-            }   
+            } 
+            </div>
+            <div className='content'>
             {
                 projetos.filter((projeto)=>projeto.titulo.toLocaleLowerCase().includes(texto)).map((projeto)=><Projeto key={projeto.id} titulo={projeto.titulo} descricao={projeto.descricao} imagem={projeto.imagem}/>)
             }
         </div>
+        </div>  
         </>
     )
 }
