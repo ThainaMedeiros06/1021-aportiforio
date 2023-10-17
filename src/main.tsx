@@ -33,32 +33,33 @@ const router = createBrowserRouter([
   },
   {
     path: "/Contato",
-    element: <div className='contato'>
-      <nav>
-        <ul>
-          <li>
-            <p>Nome:</p>
-            <button>Nome</button>
-            <button>SobreNome</button>
-          </li>
-          <li>
-            <p>Email:</p>
-            <button>Email</button>
-          </li>
-          <li>
-            <p>Endereço:</p>
-            <button>Endereço</button>
-          </li>
-          <li>
-            <p>Telefone:</p>
-            <button>Telefone</button>
-          </li>
-        </ul>
-      </nav>
+    element: <>
+    <Header/>
+    <div className='contato'>
+      <form>
+        <div className="form-info">
+          <label>Nome:</label>
+          <div className="nomeForm">
+            <input type="text" placeholder='Nome'/>
+            <input type="text" placeholder='Sobrenome'/>
+            </div>
+
+            <label>E-mail:</label>
+            <input className='input-n' type='email' placeholder='E-mail'/>
+
+            <label>Endereço:</label>
+            <input className='input-n' type='text' placeholder='Endereço'/>
+
+            <label>Telefone:</label>
+            <input className='input-n' type='tel' placeholder='Telefone'/>
+            </div>
+            <button>Enviar</button>
+            </form>
       </div>
-    
-  
-  
+
+      <Footer/>
+      </>
+
   },
 ]);
 
